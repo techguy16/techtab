@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Boardwalk New Tab Page",
+    "version": "1.0",
+    "description": "Windows 11 Store-styled New Tab Page",
+    "author": "Studio30",
+    "chrome_url_overrides" : {
+      "newtab": "index.html"
+    },
+    "permissions": [
+      "storage",
+      "contextMenus",
+      "webNavigation",
+      "scripting"
+    ],
+    "icons": {
+      "16": "logos/icon16.png",
+      "32": "logos/icon32.png",
+      "192": "logos/icon192.png",
+      "512": "logos/icon512.png"
+    }
+  }

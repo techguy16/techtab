@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTab</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="bodyContent.css">
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <style>
+        body {
+          font-family: Urbanist, sans-serif !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="firstVisitSetup">
+        <div class="fvsIntro">
+            <div class="iHead">Welcome to TechTab!</div>
+            <div class="iSubhead">Let's get started by setting up your boardwalk.</div>
+            <div class="iSubhead2">Tip: You can change any of this information later from the profile menu.</div>
+        </div>
+        <div class="fvsSect fvsPersonal">
+            <p class="spwcsTitle">Personal Info:
+                <span id="fsw1">This will be the information that shows in your profile menu.<br>You can open your profile menu at any time by clicking your profile icon in the top-right of the screen.</span>
+                <span id="fsw2">Your information is NOT shared outside of your computer. All data is stored locally on your system.</span>
+            </p>
+            <label>Your name:</label>
+                <input type="text" id="piTBNameInt" class="piTextBox pitbName" placeholder="John Doe" id="piName">
+            <label>Your email/user name:</label>
+                <input type="text" id="piTBEmailInt" class="piTextBox pitbEmail" placeholder="john.doe@contoso.com" id="piEmail">
+        </div>
+    </section>
+
+    <section class="topNav">
+        <div class="navIcon"></div>
+        <div class="navTitle">TechTab
+        </div>
+        <input type="text" class="searchField" id="searchField" placeholder="Search Google">
+        <div class="profile" id="profButton">
+            <div class="tnProfIcon" id="profIconBtn"></div>
+            <div class="profMenu" id="profMenu">
+                <div class="pmAboutMe">
+                    <div class="pmamProfIcon" id="pmamProfIcon"></div>
+                    <div class="pmamText">
+                        <div class="ptName" id="ptName">User</div>
+                        <div class="ptEmail" id="ptEmail"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sideNav">
+        <a class="sbButton sbbActive sbBtn1">
+            <div class="sbbaInd"></div>
+        </a>
+        <a href="https://mail.google.com" class="sbButton sbbInactive sbBtn2" data-sbbLabel="Gmail"></a>
+        <a href="https://images.google.com" class="sbButton sbbInactive sbBtn3" data-sbbLabel="Images"></a>
+        <a href="https://drive.google.com" class="sbButton sbbInactive sbBtn4" style="margin-top: auto"
+            data-sbbLabel="Drive"></a>
+        <a href="https://photos.google.com" class="sbButton sbbInactive sbBtn5" style="margin-bottom: 55px"
+            data-sbbLabel="Photos"></a>
+    </section>
+
+    <section class="content">
+        
+
+        <div class="cLabel">Welcome Home!</div>
+        <section class="cSpotlight">
+            <div class="csImage" id="csImage">
+            <div class="reArea" id="reArea"></div>
+            </div>
+            <div class="chBoardwalk" id="boardwalk">
+                <div class="scrollBtn sbEnd" id="bwLeft"></div>
+                <div class="scrollBtn sbStart" id="bwRight"></div>
+
+                <a href="https://trademe.co.nz" class="chbTile chbTileCustom" data-chbtSiteName="Trade Me">
+                    <img src="https://assets.materialup.com/uploads/2e5bb38b-15c9-43e7-8339-2ffc6d6cf90b/preview"
+                        class="chbTileIconBlur">
+                    <img src="https://assets.materialup.com/uploads/2e5bb38b-15c9-43e7-8339-2ffc6d6cf90b/preview"
+                        class="chbTileIcon">
+                    <div class="chbGrad"></div>
+                </a>
+
+                <a href="https://www.youtube.com" class="chbTile chbTileCustom" data-chbtSiteName="Youtube">
+                    <img src="https://www.youtube.com/s/desktop/342284a8/img/favicon_144x144.png"
+                        class="chbTileIconBlur">
+                    <img src="https://www.youtube.com/s/desktop/342284a8/img/favicon_144x144.png" class="chbTileIcon">
+                    <div class="chbGrad"></div>
+                </a>
+
+                <a href="https://www.spark.co.nz/xtramail/signin/" class="chbTile chbTileCustom" data-chbtSiteName="Xtra Mail">
+                    <img src="https://lh3.googleusercontent.com/proxy/Pmtm6reHmtEMucqofaRjAW0AwJO3akDG-1pYEaDT0xtEBOBUoq2qjmXQAnZXoJimSlBdNceU5oarJ4KpYllnGULYLefleHt5tJuSbl9LsUCYkjP9UA"
+                        class="chbTileIconBlur">
+                    <img src="https://lh3.googleusercontent.com/proxy/Pmtm6reHmtEMucqofaRjAW0AwJO3akDG-1pYEaDT0xtEBOBUoq2qjmXQAnZXoJimSlBdNceU5oarJ4KpYllnGULYLefleHt5tJuSbl9LsUCYkjP9UA"
+                        class="chbTileIcon">
+                    <div class="chbGrad"></div>
+                </a>
+
+                <a href="https://www.facebook.com" class="chbTile chbTileCustom" data-chbtSiteName="Facebook">
+                    <img src="https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.svg" class="chbTileIconBlur">
+                    <img src="https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.svg" class="chbTileIcon">
+                    <div class="chbGrad"></div>
+                </a>
+
+                <a href="https://www.mitre10.co.nz/" class="chbTile chbTileCustom" data-chbtSiteName="Mitre 10">
+                    <img src="https://www.nzgbc.org.nz/Image?Action=View&Image_id=12051" class="chbTileIconBlur">
+                    <img src="https://www.nzgbc.org.nz/Image?Action=View&Image_id=12051" class="chbTileIcon">
+                    <div class="chbGrad"></div>
+                </a>
+
+                <a href="https://www.stihlshop.co.nz/" class="chbTile chbTileCustom" data-chbtSiteName="Stihl Shop">
+                    <img src="https://logoeps.com/wp-content/uploads/2012/10/stihl-vector-logo.png"
+                        class="chbTileIconBlur">
+                    <img src="https://logoeps.com/wp-content/uploads/2012/10/stihl-vector-logo.png"
+                        class="chbTileIcon">
+                    <div class="chbGrad"></div>
+                </a>
+            </div>
+        </section>
+        <section class="cElse"></section>
+    </section>
+
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
